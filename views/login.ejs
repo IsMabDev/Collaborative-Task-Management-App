@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Login</h1>
+  <form action="" method="POST">
+    <h2><% if (typeof message!==undefined && message) { %><%= message %><% } else { %>Please enter your login credentials.<% } %></h2>
+     <!-- <h2> <%= message || 'Please enter your login credentials.' %></h2> -->
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" placeholder="username@mail.com" />
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" />
+    <button>Login</button>
+  </form>
+</body>
+
+</html>
